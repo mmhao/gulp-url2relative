@@ -1,0 +1,17 @@
+{
+  "name": "gulp-url2relative",
+  "version": "1.0.0",
+  "description": "把html的css/js/img路径替换为相对链接，把css的img/font路径替换",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gulp-url2relative"
+  ],
+  "author": "mhao",
+  "license": "ISC",
+  "devDependencies": {
+    "through2": "^2.0.3"
+  }
+}
