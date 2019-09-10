@@ -22,15 +22,15 @@ gulp.src(...).pipe(url2relative(options))
 options为传入的参数，为对象类型  
 
 具体参数：  
-options  Object
-options.isLink Boolean
-  为true时，直接替换变量而不是转为相对链接
-options.prefix String
-  变量的识别根据这个来判断，比如变量为@@imgPath;那么这里值为@@，默认也为@@
-options.suffix String
-  根据这个识别哪种类型的静态资源需要替换，默认几乎所有图片、字体、js、css都会替换
- options.data Object
-  传入的变量，如{imgPath: path.resolve(__dirname, "./src/assets/css")}，可以多个，如cssPath、htmlPath等
+options  Object  
+options.isLink Boolean  
+  为true时，直接替换变量而不是转为相对链接  
+options.prefix String  
+  变量的识别根据这个来判断，比如变量为@@imgPath;那么这里值为@@，默认也为@@  
+options.suffix String  
+  根据这个识别哪种类型的静态资源需要替换，默认几乎所有图片、字体、js、css都会替换  
+ options.data Object  
+  传入的变量，如{imgPath: path.resolve(__dirname, "./src/assets/css")}，可以多个，如cssPath、htmlPath等  
 
-比如代码在src文件夹下，html文件里面的img路径为src="@/assets/images/1/png";这里assets上一级目录就是src,
+
 
